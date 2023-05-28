@@ -10,7 +10,7 @@ import {
   View,
 } from "react-native";
 import { useDispatch, useSelector } from "react-redux";
-import SearchIcon from "../../assets/search.png";
+import SearchIcon from "../../assets/search-icon.png";
 import { setErrorMessage, setUserName, setUsers } from "../../store/actions";
 import data from "../dataDump/leaderboard.json";
 
