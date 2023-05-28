@@ -32,6 +32,16 @@ const BananaScreen = () => {
 
   const indexedUsers = indexUsersByName();
 
+  // In this searchUser() function, we check whether the searched user is within
+  // the top 10 by finding its index in the sorted user array.
+  // If the index is less than 10, we follow Case 1 and display the top 10 list.
+  // If the index is 10 or greater, we follow Case 2 and replace the
+  // searched user with the last rank of the top 10 list.
+
+  // The code handles both scenarios as per your requirement, ensuring that
+  // the searched user is either included in the top 10
+  // or given the appropriate rank in the overall list.
+
   const searchUser = () => {
     Keyboard.dismiss();
     const searchedUser = indexedUsers[userName.toLowerCase()];
@@ -170,6 +180,7 @@ const BananaScreen = () => {
   );
 };
 
+// PropTypes is used for type checking the props in the BananaScreen component.
 BananaScreen.propTypes = {
   userName: PropTypes.string,
   users: PropTypes.arrayOf(

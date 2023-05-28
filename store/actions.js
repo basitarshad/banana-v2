@@ -1,3 +1,5 @@
+// This file will contain the action creators to dispatch actions to update the state
+
 export const setUserName = (userName) => {
   return { type: "SET_USER_NAME", payload: userName };
 };

@@ -1,3 +1,5 @@
+// This file will contain the reducer function to handle the state updates
+
 const initialState = {
   userName: "",
   users: [],
